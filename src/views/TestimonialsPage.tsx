@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import type { PublicReview } from "../lib/review-validation";
+import ReviewGallery from "../components/ReviewGallery";
+import ReviewPhotoPicker, { type SelectedPhoto } from "../components/ReviewPhotoPicker";
 
 export interface TestimonialFormData {
   name: string;
@@ -26,6 +28,8 @@ const TestimonialsPage: React.FC = () => {
   const [formError, setFormError] = useState("");
   const [testimonials, setTestimonials] = useState<PublicReview[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [photos, setPhotos] = useState<SelectedPhoto[]>([]);
+  const [preparingPhotos, setPreparingPhotos] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
   const [loadingError, setLoadingError] = useState<string>("");
 
@@ -75,7 +79,7 @@ const TestimonialsPage: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (isSubmitting) return;
+    if (isSubmitting || preparingPhotos) return;
 
     // Validate required fields
     if (!formData.name || !formData.email || !formData.comment) {
@@ -88,12 +92,12 @@ const TestimonialsPage: React.FC = () => {
     setIsSubmitting(true);
 
     try {
+      const upload = new FormData();
+      Object.entries(formData).forEach(([key,value]) => upload.append(key,String(value)));
+      photos.forEach(photo => upload.append('photos',photo.file));
       const response = await fetch("/api/reviews", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        ...(photos.length ? { body: upload } : { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) }),
       });
 
       if (!response.ok) {
@@ -103,6 +107,7 @@ const TestimonialsPage: React.FC = () => {
 
       // After submit, reset form and fetch updated testimonials
       setFormSubmitted(true);
+      setPhotos([]);
       setFormData({
         name: "",
         email: "",
@@ -211,6 +216,7 @@ const TestimonialsPage: React.FC = () => {
                 <p className="text-neutral-700 mb-6 italic">
                   &quot;{testimonial.comment}&quot;
                 </p>
+                <ReviewGallery photos={testimonial.photos} name={testimonial.name} />
                 <div className="flex justify-between items-end">
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
@@ -252,6 +258,7 @@ const TestimonialsPage: React.FC = () => {
                 </div>
               )}
 
+              <fieldset disabled={isSubmitting}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label
@@ -387,10 +394,12 @@ const TestimonialsPage: React.FC = () => {
               </div>
 
               <div className="text-center">
-                <button type="submit" disabled={isSubmitting} className="btn btn-primary px-8">
+                <ReviewPhotoPicker photos={photos} onChange={setPhotos} disabled={isSubmitting} onBusy={setPreparingPhotos} />
+                <button type="submit" disabled={isSubmitting || preparingPhotos} className="btn btn-primary px-8">
                   {isSubmitting ? "Submitting..." : "Submit Your Testimonial"}
                 </button>
               </div>
+              </fieldset>
             </form>
           </div>
         </div>

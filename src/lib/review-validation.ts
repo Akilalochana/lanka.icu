@@ -6,7 +6,8 @@ export interface ReviewInput {
   rating: number;
   comment: string;
 }
-export type PublicReview = Omit<ReviewInput, "email"> & { id: string; date: string };
+export type ReviewPhoto = { id: string; url: string };
+export type PublicReview = Omit<ReviewInput, "email"> & { id: string; date: string; photos?: ReviewPhoto[] };
 
 export function validateReview(value: unknown): ReviewInput {
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("Please provide a review object.");

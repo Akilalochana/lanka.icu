@@ -57,3 +57,13 @@ Deploy this directory as one Next.js app on a Node-capable host such as Vercel. 
 ## Original content limitations
 
 The original tour names, durations, itinerary lengths and some form package labels disagree. These business values were retained rather than inventing new itineraries or prices. The footer newsletter form and social `#` links were presentational placeholders in the source and still need a newsletter provider and real social URLs. The contact address and embedded Colombo map also disagree in the source. External Pexels photos, Google Maps, Google Fonts and EmailJS still require their respective services to be reachable.
+
+## Review travel photos
+
+Reviews accept up to three optional JPG, PNG or WebP photos. The form accepts originals up to 10 MB each, previews and resizes them in the browser, and allows removal before submitting. Reviews with photos use multipart form data; existing JSON-only clients continue to work.
+
+The server enforces a 3.5 MB total multipart body limit, validates and decodes each image (1 MB maximum uploaded file, 25 megapixel decode limit), resizes to at most 1280 pixels, and re-encodes as JPEG without EXIF metadata. The review and its photos are saved atomically. Existing reviews without photos remain supported.
+
+Compressed photos are stored in Neon `review_photos` as binary data and served through `/api/reviews/photos/[id]`; list responses contain only photo URLs. No local upload directory or additional storage account is needed. This uses Neon storage and transfer quota; for a large photo library, move the binary storage to an object store. Photos are public, as stated in the form. Deleting a review cascades to its photos.
+
+`npm run db:migrate` now applies all numbered SQL files in order. Run it for each deployment database to create `review_photos`. The local configured Neon database has been migrated and a temporary photo review was successfully saved, retrieved and removed during verification.
