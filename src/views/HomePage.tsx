@@ -142,7 +142,7 @@ const HomePage: React.FC = () => {
       <section className="section-padding bg-primary text-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Lanka.icu</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Travel with Prasad</h2>
             <p className="max-w-2xl mx-auto">
               We&apos;re passionate about creating authentic travel experiences that showcase the true beauty of Sri Lanka.
             </p>

@@ -79,7 +79,7 @@ const AboutPage: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative container mx-auto h-full flex flex-col justify-center items-center text-center text-white z-10 px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About Lanka.icu
+            About Travel with Prasad
           </h1>
           <p className="text-lg max-w-2xl">
             We&apos;re passionate about showcasing the true beauty of Sri Lanka
@@ -100,7 +100,7 @@ const AboutPage: React.FC = () => {
             >
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-neutral-700 mb-4">
-                Lanka.icu was founded in 2015 by a team of passionate
+                Travel with Prasad was founded in 2015 by a team of passionate
                 Sri Lankan travel enthusiasts who wanted to share the authentic
                 beauty of their homeland with the world. What began as a small
                 operation has now grown into one of Sri Lanka&apos;s most trusted
@@ -131,7 +131,7 @@ const AboutPage: React.FC = () => {
             >
               <img
                 src="https://images.pexels.com/photos/5137664/pexels-photo-5137664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Founder of Lanka.icu"
+                alt="Founder of Travel with Prasad"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
@@ -189,7 +189,7 @@ const AboutPage: React.FC = () => {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
-              Why Choose Lanka.icu
+              Why Choose Travel with Prasad
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
               We&apos;re committed to providing exceptional travel experiences that
@@ -339,8 +339,7 @@ const AboutPage: React.FC = () => {
                 <p className="text-primary font-medium mb-3">Founder & CEO</p>
                 <p className="text-neutral-600 text-sm">
                   With over 15 years in tourism, Prasad&apos;s love for Sri Lanka&apos;s
-                  culture and landscapes inspired him to create Ceylon
-                  Adventures.
+                  culture and landscapes inspired him to create Travel with Prasad.
                 </p>
               </div>
             </motion.div>

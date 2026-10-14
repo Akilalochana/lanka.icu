@@ -237,7 +237,7 @@ const TestimonialsPage: React.FC = () => {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Share Your Experience</h2>
               <p className="text-neutral-600">
-                We would love to hear about your journey with Lanka.icu!
+                We would love to hear about your journey with Travel with Prasad!
                 Your feedback helps us improve and inspires other travelers.
               </p>
             </div>

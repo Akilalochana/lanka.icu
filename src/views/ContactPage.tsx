@@ -65,7 +65,7 @@ const ContactPage: React.FC = () => {
         package: formData.package || 'Not specified',
         travel_date: formData.travelDate || 'Not specified',
         travelers: formData.travelers,
-        to_name: 'Lanka.icu Team', // Your name/company name
+        to_name: 'Travel with Prasad Team', // Your name/company name
       };
       
       // Send email using EmailJS
@@ -396,7 +396,7 @@ const ContactPage: React.FC = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Lanka.icu Office Location"
+              title="Travel with Prasad Office Location"
             ></iframe>
           </div>
         </div>

@@ -1,4 +1,4 @@
-﻿# Lanka.icu — Next.js + Neon
+﻿# Travel with Prasad — Next.js + Neon
 
 The original React/Vite site has been migrated into this single Next.js App Router project. Run commands from `E:\clients_projects\lankaicu\updated_to_next_app`.
 

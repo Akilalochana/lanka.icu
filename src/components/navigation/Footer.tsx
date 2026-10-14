@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               {/* <PalmTree size={24} className="text-primary" /> */}
-              <img src="/favicon.png" alt="Logo" className="w-12 h-12" />
-              <span className="text-lg font-bold">Lanka.icu</span>
+              <img src="/new_logo.jpg" alt="Travel with Prasad logo" width={64} height={64} className="w-16 h-16 shrink-0 rounded-full object-contain" />
+              <span className="text-lg font-bold">Travel with Prasad</span>
             </div>
             <p className="text-neutral-400 mb-6">
               Experience the beauty and culture of Sri Lanka with our expertly guided tours.
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-neutral-800 mt-12 pt-8 text-center">
           <p className="text-neutral-500">
-            &copy; {new Date().getFullYear()} Lanka.icu. All rights reserved.
+            &copy; {new Date().getFullYear()} Travel with Prasad. All rights reserved.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ export const testimonials: Testimonial[] = [
     location: "United Kingdom",
     date: "March 2025",
     rating: 5,
-    comment: "Our 14-day tour with Lanka.icu was simply incredible! Our guide Chaminda was knowledgeable, friendly, and went above and beyond to make our trip special. The itinerary was perfectly balanced between cultural sites, wildlife, and beach time. Highlights included the safari in Yala where we saw leopards, and the train journey through the tea plantations. Highly recommend!",
+    comment: "Our 14-day tour with Travel with Prasad was simply incredible! Our guide Chaminda was knowledgeable, friendly, and went above and beyond to make our trip special. The itinerary was perfectly balanced between cultural sites, wildlife, and beach time. Highlights included the safari in Yala where we saw leopards, and the train journey through the tea plantations. Highly recommend!",
     package: "Sri Lanka Grand Tour"
   },
   {
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     location: "Canada",
     date: "December 2024",
     rating: 5,
-    comment: "We traveled as a family with two teenagers on the Grand Tour, and Lanka.icu made it perfect for all of us. The kids loved the wildlife safaris and water activities, while we appreciated the cultural and historical aspects. The accommodations were excellent, and our guide was patient and flexible with our family's needs. Would book with them again in a heartbeat!",
+    comment: "We traveled as a family with two teenagers on the Grand Tour, and Travel with Prasad made it perfect for all of us. The kids loved the wildlife safaris and water activities, while we appreciated the cultural and historical aspects. The accommodations were excellent, and our guide was patient and flexible with our family's needs. Would book with them again in a heartbeat!",
     package: "Sri Lanka Grand Tour"
   },
   {
@@ -52,7 +52,7 @@ export const testimonials: Testimonial[] = [
     location: "Italy",
     date: "October 2024",
     rating: 5,
-    comment: "Our 14-day tour was absolutely fantastic! Sri Lanka has incredible diversity - from ancient temples to beautiful beaches and everything in between. Our guide was exceptional, the food was amazing (especially the cooking class!), and the itinerary was perfectly paced. Lanka.icu took care of every detail so we could just enjoy our holiday. Grazie mille!",
+    comment: "Our 14-day tour was absolutely fantastic! Sri Lanka has incredible diversity - from ancient temples to beautiful beaches and everything in between. Our guide was exceptional, the food was amazing (especially the cooking class!), and the itinerary was perfectly paced. Travel with Prasad took care of every detail so we could just enjoy our holiday. Grazie mille!",
     package: "Sri Lanka Grand Tour"
   }
 ];
