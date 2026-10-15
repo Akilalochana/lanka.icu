@@ -4,7 +4,7 @@ export const destinations: Destination[] = [
   {
     id: "1",
     name: "Sigiriya",
-    image: "/Sigiriya.jpg",
+    image: "/optimized/Sigiriya-1280-91f4301802.webp",
     description: "Sigiriya, or Lion Rock, is an ancient rock fortress and palace complex built in the 5th century AD. The site is known for its frescoes, terraced gardens, and the massive lion paw entrance to the palace on the summit. Recognized as a UNESCO World Heritage Site, it's one of Sri Lanka's most iconic landmarks.",
     activities: [
       "Climb the rock fortress for panoramic views",
@@ -18,7 +18,7 @@ export const destinations: Destination[] = [
   {
     id: "2",
     name: "Kandy",
-    image: "/Kandy.jpg",
+    image: "/optimized/Kandy-1280-c5f842d8a5.webp",
     description: "Kandy is a picturesque city nestled among hills in central Sri Lanka. As the last capital of the ancient kings' era, it maintains a rich cultural heritage. The city is home to the Temple of the Tooth Relic, one of Buddhism's most sacred sites, and its surroundings offer lush botanical gardens and scenic landscapes.",
     activities: [
       "Visit the sacred Temple of the Tooth Relic",
@@ -32,7 +32,7 @@ export const destinations: Destination[] = [
   {
     id: "3",
     name: "Ella",
-    image: "/ella.jpg",
+    image: "/optimized/ella-1280-8166d9002a.webp",
     description: "Ella is a charming town nestled in the misty highlands of Sri Lanka's Hill Country. Famous for its stunning natural landscapes, including waterfalls, tea plantations, and mountain peaks, it has become a favorite destination for hikers and nature lovers. The area is also known for its iconic Nine Arch Bridge, a colonial-era railway bridge surrounded by lush jungle.",
     activities: [
       "Hike to Little Adam's Peak for sunrise views",
@@ -46,7 +46,7 @@ export const destinations: Destination[] = [
   {
     id: "4",
     name: "Yala National Park",
-    image: "/yala.jpg",
+    image: "/optimized/yala-1280-62eb2dbd51.webp",
     description: "Yala National Park is Sri Lanka's most visited wildlife reserve and the second-largest national park in the country. Located in the southeast region, it's renowned for having one of the highest leopard densities in the world. The park features diverse ecosystems, from monsoon forests to grasslands and lagoons, supporting a variety of wildlife including elephants, sloth bears, and numerous bird species.",
     activities: [
       "Safari drives to spot leopards and other wildlife",
@@ -60,7 +60,7 @@ export const destinations: Destination[] = [
   {
     id: "5",
     name: "Mirissa",
-    image: "/mirissa.jpg",
+    image: "/optimized/mirissa-1280-2fae95508b.webp",
     description: "Mirissa is a picturesque beach town on Sri Lanka's southern coast, known for its crescent-shaped beach lined with palm trees. It's a popular destination for relaxation, water activities, and whale watching. The laid-back atmosphere, stunning sunsets, and fresh seafood have made it a favorite among travelers seeking a coastal paradise.",
     activities: [
       "Whale and dolphin watching (November to April)",

@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React, { useEffect } from "react";
 import Slider from "react-slick"; // Import Slider from react-slick
@@ -44,26 +46,26 @@ const AboutPage: React.FC = () => {
 
   // Array of image URLs for the gallery
   const galleryImages = [
-    "/gallery.jpg",
-    "/gallery1.jpg",
-    "/gallery2.jpg",
-    "/gallery3.jpg",
-    "/gallery4.jpg",
-    "/gallery5.jpg",
-    "/gallery6.jpg",
-    "/gallery7.jpg",
-    "/gallery8.jpg",
-    "/gallery9.jpg",
-    "/gallery10.jpg",
-    "/gallery11.jpg",
-    "/gallery12.jpg",
-    "/gallery13.jpg",
-    "/gallery14.jpg",
-    "/gallery15.jpg",
-    "/gallery16.jpg",
-    "/gallery17.jpg",
-    "/gallery18.jpg",
-    "/gallery19.jpg",
+    "/optimized/gallery-1280-8dccee96fb.webp",
+    "/optimized/gallery1-1280-0375173e8a.webp",
+    "/optimized/gallery2-1280-9efddc90ab.webp",
+    "/optimized/gallery3-1280-8eb59a2a1c.webp",
+    "/optimized/gallery4-1280-40ab3a8062.webp",
+    "/optimized/gallery5-1280-1c05424b7f.webp",
+    "/optimized/gallery6-1280-f7d2aff03a.webp",
+    "/optimized/gallery7-1280-9e4962f75d.webp",
+    "/optimized/gallery8-1280-843c2a8d6a.webp",
+    "/optimized/gallery9-1280-a7ce6a497a.webp",
+    "/optimized/gallery10-1280-03128abe00.webp",
+    "/optimized/gallery11-1280-3c8f191371.webp",
+    "/optimized/gallery12-1280-89ad7cbea9.webp",
+    "/optimized/gallery13-1280-abb31971b3.webp",
+    "/optimized/gallery14-1280-f41557db88.webp",
+    "/optimized/gallery15-1280-70381c5065.webp",
+    "/optimized/gallery16-1280-bf4b23ef15.webp",
+    "/optimized/gallery17-1280-c291229846.webp",
+    "/optimized/gallery18-1280-5264af5eee.webp",
+    "/optimized/gallery19-1280-39d3b0c0b7.webp",
   ];
 
   return (
@@ -73,7 +75,7 @@ const AboutPage: React.FC = () => {
         className="relative h-80 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(/perahara.jpg)",
+            "url(/optimized/perahara-1280-cdd70ebad7.webp)",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -129,13 +131,13 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <img
+              <SiteImage
                 src="https://images.pexels.com/photos/5137664/pexels-photo-5137664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Founder of Travel with Prasad"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-                <img
+                <SiteImage
                   src="https://images.pexels.com/photos/7161187/pexels-photo-7161187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Sri Lankan Tea Plantations"
                   className="w-32 h-32 object-cover rounded-lg"
@@ -173,7 +175,7 @@ const AboutPage: React.FC = () => {
             {galleryImages.map((image, index) => (
               <div key={index}
                   className="px-1"  >
-                <img
+                <SiteImage
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
                   className="w-full h-48 object-cover rounded-lg shadow-lg "
@@ -329,7 +331,7 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <img
+              <SiteImage
                 src="https://images.pexels.com/photos/5397723/pexels-photo-5397723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=" Prasad Kumara"
                 className="w-full h-64 object-cover"
@@ -351,7 +353,7 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <img
+              <SiteImage
                 src="https://images.pexels.com/photos/8133263/pexels-photo-8133263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Priya Jayawardena"
                 className="w-full h-64 object-cover"
@@ -375,7 +377,7 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <img
+              <SiteImage
                 src="https://images.pexels.com/photos/7148384/pexels-photo-7148384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Chaminda Fernando"
                 className="w-full h-64 object-cover"
@@ -397,7 +399,7 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <img
+              <SiteImage
                 src="https://images.pexels.com/photos/8101622/pexels-photo-8101622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Amali De Silva"
                 className="w-full h-64 object-cover"

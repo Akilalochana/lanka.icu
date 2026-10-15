@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
@@ -22,7 +24,7 @@ const PackagesPage: React.FC = () => {
         className="relative h-64 md:h-80 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(/tain.jpg)",
+            "url(/optimized/tain-1280-d54310b6c3.webp)",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -50,7 +52,7 @@ const PackagesPage: React.FC = () => {
                 transition={{ duration: 0.5 }}
               >
                 <div className="relative h-56 overflow-hidden">
-                  <img
+                  <SiteImage
                     src={pkg.image}
                     alt={pkg.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"

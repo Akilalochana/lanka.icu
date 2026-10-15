@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 import { PiWhatsappLogo } from 'react-icons/pi';
 
 const ContactPage: React.FC = () => {
@@ -21,10 +20,6 @@ const ContactPage: React.FC = () => {
   const [formError, setFormError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // EmailJS configuration - Replace with your actual values
-  const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_3gxsjpi';
-  const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_qxrh5m8';
-  const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'ut0JmWaSHfKGXlMG8';
 
     useEffect(() => {
       // Scroll to top when component mounts
@@ -41,6 +36,7 @@ const ContactPage: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
     
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
@@ -50,33 +46,15 @@ const ContactPage: React.FC = () => {
     
     setIsSubmitting(true);
     setFormError('');
+    setFormSubmitted(false);
     
     try {
-      // Initialize EmailJS (you can also do this in useEffect or at component mount)
-      emailjs.init(EMAILJS_PUBLIC_KEY);
-      
-      // Prepare template parameters
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone || 'Not provided',
-        subject: formData.subject || 'Contact Form Submission',
-        message: formData.message,
-        package: formData.package || 'Not specified',
-        travel_date: formData.travelDate || 'Not specified',
-        travelers: formData.travelers,
-        to_name: 'Travel with Prasad Team', // Your name/company name
-      };
-      
-      // Send email using EmailJS
-      const result = await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams
-      );
-      
-      console.log('Email sent successfully:', result);
-      
+      const response = await fetch('/api/contact', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData),
+      });
+      const result = await response.json().catch(() => null);
+      if (!response.ok || !result?.success) throw new Error(result?.error || 'Unable to send your message. Please try again.');
+
       // Show success message
       setFormSubmitted(true);
       
@@ -99,8 +77,7 @@ const ContactPage: React.FC = () => {
       });
       
     } catch (error) {
-      console.error('Failed to send email:', error);
-      setFormError('Failed to send message. Please try again or contact us directly.');
+      setFormError(error instanceof Error ? error.message : 'Unable to send your message. Please check your connection and try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -109,7 +86,7 @@ const ContactPage: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-64 md:h-80 bg-cover bg-center" style={{ backgroundImage: 'url(/dance.jpg)' }}>
+      <section className="relative h-64 md:h-80 bg-cover bg-center" style={{ backgroundImage: 'url(/optimized/dance-1280-11d9aaba0c.webp)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative container mx-auto h-full flex flex-col justify-center items-center text-center text-white z-10 px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>

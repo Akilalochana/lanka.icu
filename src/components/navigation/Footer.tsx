@@ -1,3 +1,4 @@
+import SiteImage from "@/src/components/SiteImage";
 import React from 'react';
 import Link from "next/link";
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
@@ -12,7 +13,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               {/* <PalmTree size={24} className="text-primary" /> */}
-              <img src="/new_logo.jpg" alt="Travel with Prasad logo" width={64} height={64} className="w-16 h-16 shrink-0 rounded-full object-contain" />
+              <SiteImage src="/optimized/new_logo-128-27af77dfac.webp" alt="Travel with Prasad logo" width={64} height={64} className="w-16 h-16 shrink-0 rounded-full object-contain" />
               <span className="text-lg font-bold">Travel with Prasad</span>
             </div>
             <p className="text-neutral-400 mb-6">

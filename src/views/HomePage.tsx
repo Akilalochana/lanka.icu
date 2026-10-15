@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -9,17 +11,17 @@ import { destinations } from '../data/destinations';
 import FeaturedReviews from '../components/FeaturedReviews';
 
 const HomePage: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [{ current: currentSlide, previous: previousSlide }, setSlide] = useState({current: 0, previous: 0});
   const heroImages = [
-    "/airline.webp",
-    "/elephant.avif",
-    "/stanislav-rozhkov-WTFiv8DOsyQ-unsplash1.svg",
-    "/stefano-alemani-f9KQYJR7fXk-unsplash1.svg",
+    "/optimized/airline-1920-2afcbaccd6.webp",
+    "/optimized/elephant-1920-6f960c789e.webp",
+    "/optimized/stanislav-rozhkov-WTFiv8DOsyQ-unsplash1-1920-5a76fb1382.webp",
+    "/optimized/stefano-alemani-f9KQYJR7fXk-unsplash1-1920-59261460a1.webp",
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % heroImages.length);
+      setSlide(slide => ({ current: (slide.current + 1) % heroImages.length, previous: slide.current }));
     }, 7000);
     return () => clearInterval(timer);
   }, [heroImages.length]);
@@ -37,14 +39,15 @@ const HomePage: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen">
-        {heroImages.map((image, index) => (
+        {heroImages.map((image, index) => (index === currentSlide || index === previousSlide) && (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 bg-cover bg-center ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ backgroundImage: `url(${image})` }}
+
           >
+            <SiteImage src={image} alt="" sizes="100vw" loading="eager" fetchPriority={index === 0 ? 'high' : 'auto'} className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black bg-opacity-40"></div>
           </div>
         ))}
@@ -104,7 +107,7 @@ const HomePage: React.FC = () => {
                 transition={{ duration: 0.5 }}
               >
                 <div className="h-56 overflow-hidden relative">
-                  <img 
+                  <SiteImage 
                     src={pkg.image} 
                     alt={pkg.title} 
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
@@ -253,7 +256,7 @@ const HomePage: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <img 
+                <SiteImage 
                   src={destination.image} 
                   alt={destination.name} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -321,8 +324,8 @@ const HomePage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <img 
-                src="/yala.jpg" 
+              <SiteImage 
+                src="/optimized/yala-1280-62eb2dbd51.webp" 
                 alt="Jungle Adventures" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -343,8 +346,8 @@ const HomePage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <img 
-                src="/gallery3.jpg" 
+              <SiteImage 
+                src="/optimized/gallery3-1280-8eb59a2a1c.webp" 
                 alt="Ancient Temples" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -365,8 +368,8 @@ const HomePage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <img 
-                src="/gallery10.jpg" 
+              <SiteImage 
+                src="/optimized/gallery10-1280-03128abe00.webp" 
                 alt="Cascading Waterfalls" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

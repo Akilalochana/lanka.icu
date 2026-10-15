@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,7 +20,7 @@ export default function Navbar() {
   const active = (href: string) => href === "/" ? pathname === href : pathname === href || pathname.startsWith(href + "/");
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || isMenuOpen ? "bg-white shadow-md py-3" : "bg-transparent py-5"}`}>
     <div className="container flex items-center justify-between">
-      <Link href="/" className="flex items-center space-x-2" onClick={() => setMenuPath(null)}><img src="/new_logo.jpg" alt="Travel with Prasad logo" width={56} height={56} className="w-14 h-14 shrink-0 rounded-full object-contain" /><span className="text-lg sm:text-xl font-bold text-primary">Travel with Prasad</span></Link>
+      <Link href="/" className="flex items-center space-x-2" onClick={() => setMenuPath(null)}><SiteImage loading="eager" src="/optimized/new_logo-128-27af77dfac.webp" alt="Travel with Prasad logo" width={56} height={56} className="w-14 h-14 shrink-0 rounded-full object-contain" /><span className="text-lg sm:text-xl font-bold text-primary">Travel with Prasad</span></Link>
       <nav aria-label="Main navigation" className="hidden xl:flex items-center space-x-6">{links.map(([href, label]) => <Link key={href} href={href} aria-current={active(href) ? "page" : undefined} className={`font-medium transition-colors hover:text-primary ${active(href) ? "text-primary" : scrolled ? "text-neutral-800" : "text-white"}`}>{label}</Link>)}</nav>
       <Link href="/contact" className="btn btn-primary hidden xl:inline-flex">Book Now</Link>
       <button className={`xl:hidden ${scrolled || isMenuOpen ? "text-neutral-800" : "text-white"}`} onClick={() => setMenuPath(isMenuOpen ? null : pathname)} aria-label="Toggle Menu" aria-expanded={isMenuOpen} aria-controls="mobile-navigation">{isMenuOpen ? <X size={24} /> : <Menu size={24} />}</button>

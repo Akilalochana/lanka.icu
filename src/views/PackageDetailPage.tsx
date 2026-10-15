@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -256,7 +258,7 @@ const PackageDetailPage = ({ packageData }: { packageData: Package }) => {
               <div className="bg-white rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
                 <Link href="/packages/1">
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <SiteImage
                       src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="Essential Sri Lanka"
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -288,7 +290,7 @@ const PackageDetailPage = ({ packageData }: { packageData: Package }) => {
               <div className="bg-white rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
                 <Link href="/packages/2">
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <SiteImage
                       src="https://images.pexels.com/photos/5364949/pexels-photo-5364949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="Sri Lanka Grand Tour"
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -320,7 +322,7 @@ const PackageDetailPage = ({ packageData }: { packageData: Package }) => {
               <div className="bg-white rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
                 <Link href="/packages/3">
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <SiteImage
                       src="https://images.pexels.com/photos/4186560/pexels-photo-4186560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="Ultimate Sri Lanka Explorer"
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"

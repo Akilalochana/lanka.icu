@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -43,7 +45,7 @@ const DestinationsPage: React.FC = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="lg:w-1/2">
-                <img 
+                <SiteImage 
                   src={destination.image} 
                   alt={destination.name} 
                   className="w-full h-[500px] object-cover rounded-lg shadow-lg"

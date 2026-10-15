@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: { default: "Travel with Prasad | Sri Lanka Travel Agency", template: "%s | Travel with Prasad" },
   description: "Discover Sri Lanka with Travel with Prasad. Explore tour packages, destinations, travel stories, and traveler reviews to plan your adventure.",
-  icons: { icon: { url: "/new_logo.jpg", type: "image/jpeg" }, apple: "/new_logo.jpg" },
+  icons: { icon: { url: "/optimized/new_logo-128-27af77dfac.webp", type: "image/jpeg" }, apple: "/optimized/new_logo-128-27af77dfac.webp" },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return <html lang="en"><body><a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-[100] focus:bg-white focus:p-4">Skip to content</a><div className="flex flex-col min-h-screen"><Navbar /><main id="main-content" className="flex-grow">{children}</main><Footer /></div></body></html>;

@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React from 'react';
 import Link from "next/link";
@@ -100,7 +102,7 @@ const BlogDetailPage = ({ blog }: { blog: Blog }) => {
                   transition={{ duration: 0.5 }}
                 >
                   <div className="h-40 overflow-hidden">
-                    <img
+                    <SiteImage
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"

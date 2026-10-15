@@ -1,4 +1,6 @@
 "use client";
+import SiteImage from "@/src/components/SiteImage";
+
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -29,7 +31,7 @@ const BlogPage = ({ initialCategory = 'all' }: { initialCategory?: string }) => 
       <section
         className="relative h-64 md:h-80 bg-cover bg-center"
         style={{
-          backgroundImage: "url(/welcometolanka.JPG)",
+          backgroundImage: "url(/optimized/welcometolanka-1280-df25b8ac25.webp)",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -78,7 +80,7 @@ const BlogPage = ({ initialCategory = 'all' }: { initialCategory?: string }) => 
                 transition={{ duration: 0.5 }}
               >
                 <div className="h-48 overflow-hidden">
-                  <img
+                  <SiteImage
                     src={blog.image}
                     alt={blog.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"

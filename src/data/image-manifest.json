@@ -1,0 +1,557 @@
+{
+  "/airline.webp": {
+    "originalBytes": 132876,
+    "variants": [
+      {
+        "src": "/optimized/airline-640-62cf2338ac.webp",
+        "width": 640,
+        "bytes": 18200
+      },
+      {
+        "src": "/optimized/airline-1280-dafa6c2bf0.webp",
+        "width": 1280,
+        "bytes": 46314
+      },
+      {
+        "src": "/optimized/airline-1920-2afcbaccd6.webp",
+        "width": 1920,
+        "bytes": 88626
+      }
+    ]
+  },
+  "/dance.jpg": {
+    "originalBytes": 149455,
+    "variants": [
+      {
+        "src": "/optimized/dance-640-d566f5d646.webp",
+        "width": 640,
+        "bytes": 39556
+      },
+      {
+        "src": "/optimized/dance-1280-11d9aaba0c.webp",
+        "width": 1038,
+        "bytes": 79950
+      }
+    ]
+  },
+  "/daniel-klein-Qx8_d5dGhrs-unsplash1.svg": {
+    "originalBytes": 16064733,
+    "variants": [
+      {
+        "src": "/optimized/daniel-klein-Qx8_d5dGhrs-unsplash1-640-a013476e2b.webp",
+        "width": 640,
+        "bytes": 45784
+      },
+      {
+        "src": "/optimized/daniel-klein-Qx8_d5dGhrs-unsplash1-1280-6a9760c86f.webp",
+        "width": 1280,
+        "bytes": 159870
+      },
+      {
+        "src": "/optimized/daniel-klein-Qx8_d5dGhrs-unsplash1-1920-381b83c397.webp",
+        "width": 1920,
+        "bytes": 333808
+      }
+    ]
+  },
+  "/elephant.avif": {
+    "originalBytes": 114099,
+    "variants": [
+      {
+        "src": "/optimized/elephant-640-8475e6e24b.webp",
+        "width": 640,
+        "bytes": 33500
+      },
+      {
+        "src": "/optimized/elephant-1280-6f960c789e.webp",
+        "width": 1200,
+        "bytes": 87968
+      },
+      {
+        "src": "/optimized/elephant-1920-6f960c789e.webp",
+        "width": 1200,
+        "bytes": 87968
+      }
+    ]
+  },
+  "/ella.jpg": {
+    "originalBytes": 2197785,
+    "variants": [
+      {
+        "src": "/optimized/ella-640-dc90f58aec.webp",
+        "width": 640,
+        "bytes": 33550
+      },
+      {
+        "src": "/optimized/ella-1280-8166d9002a.webp",
+        "width": 1280,
+        "bytes": 115390
+      }
+    ]
+  },
+  "/favicon.png": {
+    "originalBytes": 549865,
+    "variants": [
+      {
+        "src": "/optimized/favicon-128-b8935928f7.webp",
+        "width": 128,
+        "bytes": 5138
+      }
+    ]
+  },
+  "/gallery.jpg": {
+    "originalBytes": 136120,
+    "variants": [
+      {
+        "src": "/optimized/gallery-640-57d2332a24.webp",
+        "width": 640,
+        "bytes": 37972
+      },
+      {
+        "src": "/optimized/gallery-1280-8dccee96fb.webp",
+        "width": 1280,
+        "bytes": 111434
+      }
+    ]
+  },
+  "/gallery1.jpg": {
+    "originalBytes": 135423,
+    "variants": [
+      {
+        "src": "/optimized/gallery1-640-d386008e6e.webp",
+        "width": 640,
+        "bytes": 34822
+      },
+      {
+        "src": "/optimized/gallery1-1280-0375173e8a.webp",
+        "width": 1280,
+        "bytes": 117100
+      }
+    ]
+  },
+  "/gallery10.jpg": {
+    "originalBytes": 124344,
+    "variants": [
+      {
+        "src": "/optimized/gallery10-640-7699c8b50b.webp",
+        "width": 640,
+        "bytes": 30484
+      },
+      {
+        "src": "/optimized/gallery10-1280-03128abe00.webp",
+        "width": 1152,
+        "bytes": 93638
+      }
+    ]
+  },
+  "/gallery11.jpg": {
+    "originalBytes": 113656,
+    "variants": [
+      {
+        "src": "/optimized/gallery11-640-d5e92b8fe7.webp",
+        "width": 640,
+        "bytes": 28148
+      },
+      {
+        "src": "/optimized/gallery11-1280-3c8f191371.webp",
+        "width": 1280,
+        "bytes": 65704
+      }
+    ]
+  },
+  "/gallery12.jpg": {
+    "originalBytes": 361480,
+    "variants": [
+      {
+        "src": "/optimized/gallery12-640-eaa6cf3956.webp",
+        "width": 640,
+        "bytes": 62296
+      },
+      {
+        "src": "/optimized/gallery12-1280-89ad7cbea9.webp",
+        "width": 1280,
+        "bytes": 204982
+      }
+    ]
+  },
+  "/gallery13.jpg": {
+    "originalBytes": 177438,
+    "variants": [
+      {
+        "src": "/optimized/gallery13-640-156894269a.webp",
+        "width": 640,
+        "bytes": 67466
+      },
+      {
+        "src": "/optimized/gallery13-1280-abb31971b3.webp",
+        "width": 960,
+        "bytes": 115260
+      }
+    ]
+  },
+  "/gallery14.jpg": {
+    "originalBytes": 145351,
+    "variants": [
+      {
+        "src": "/optimized/gallery14-640-1ca63d6598.webp",
+        "width": 640,
+        "bytes": 39466
+      },
+      {
+        "src": "/optimized/gallery14-1280-f41557db88.webp",
+        "width": 960,
+        "bytes": 73694
+      }
+    ]
+  },
+  "/gallery15.jpg": {
+    "originalBytes": 246669,
+    "variants": [
+      {
+        "src": "/optimized/gallery15-640-563b9ea834.webp",
+        "width": 640,
+        "bytes": 107310
+      },
+      {
+        "src": "/optimized/gallery15-1280-70381c5065.webp",
+        "width": 960,
+        "bytes": 218808
+      }
+    ]
+  },
+  "/gallery16.jpg": {
+    "originalBytes": 220097,
+    "variants": [
+      {
+        "src": "/optimized/gallery16-640-b59477de9e.webp",
+        "width": 640,
+        "bytes": 94784
+      },
+      {
+        "src": "/optimized/gallery16-1280-bf4b23ef15.webp",
+        "width": 959,
+        "bytes": 175938
+      }
+    ]
+  },
+  "/gallery17.jpg": {
+    "originalBytes": 280816,
+    "variants": [
+      {
+        "src": "/optimized/gallery17-640-95060e7418.webp",
+        "width": 640,
+        "bytes": 136476
+      },
+      {
+        "src": "/optimized/gallery17-1280-c291229846.webp",
+        "width": 959,
+        "bytes": 250984
+      }
+    ]
+  },
+  "/gallery18.jpg": {
+    "originalBytes": 101672,
+    "variants": [
+      {
+        "src": "/optimized/gallery18-640-978884b92e.webp",
+        "width": 640,
+        "bytes": 25546
+      },
+      {
+        "src": "/optimized/gallery18-1280-5264af5eee.webp",
+        "width": 1280,
+        "bytes": 62128
+      }
+    ]
+  },
+  "/gallery19.jpg": {
+    "originalBytes": 168976,
+    "variants": [
+      {
+        "src": "/optimized/gallery19-640-0b3bd7f61a.webp",
+        "width": 640,
+        "bytes": 46558
+      },
+      {
+        "src": "/optimized/gallery19-1280-39d3b0c0b7.webp",
+        "width": 1280,
+        "bytes": 118596
+      }
+    ]
+  },
+  "/gallery2.jpg": {
+    "originalBytes": 149689,
+    "variants": [
+      {
+        "src": "/optimized/gallery2-640-7cd58494a0.webp",
+        "width": 640,
+        "bytes": 49894
+      },
+      {
+        "src": "/optimized/gallery2-1280-9efddc90ab.webp",
+        "width": 960,
+        "bytes": 93488
+      }
+    ]
+  },
+  "/gallery3.jpg": {
+    "originalBytes": 118238,
+    "variants": [
+      {
+        "src": "/optimized/gallery3-640-3d4eee98c2.webp",
+        "width": 640,
+        "bytes": 35724
+      },
+      {
+        "src": "/optimized/gallery3-1280-8eb59a2a1c.webp",
+        "width": 960,
+        "bytes": 61886
+      }
+    ]
+  },
+  "/gallery4.jpg": {
+    "originalBytes": 141467,
+    "variants": [
+      {
+        "src": "/optimized/gallery4-640-c44e965eb5.webp",
+        "width": 640,
+        "bytes": 41308
+      },
+      {
+        "src": "/optimized/gallery4-1280-40ab3a8062.webp",
+        "width": 1152,
+        "bytes": 101436
+      }
+    ]
+  },
+  "/gallery5.jpg": {
+    "originalBytes": 110784,
+    "variants": [
+      {
+        "src": "/optimized/gallery5-640-1460b9d2b4.webp",
+        "width": 640,
+        "bytes": 29250
+      },
+      {
+        "src": "/optimized/gallery5-1280-1c05424b7f.webp",
+        "width": 1280,
+        "bytes": 64568
+      }
+    ]
+  },
+  "/gallery6.jpg": {
+    "originalBytes": 125047,
+    "variants": [
+      {
+        "src": "/optimized/gallery6-640-ba8b67262b.webp",
+        "width": 640,
+        "bytes": 37154
+      },
+      {
+        "src": "/optimized/gallery6-1280-f7d2aff03a.webp",
+        "width": 1280,
+        "bytes": 96614
+      }
+    ]
+  },
+  "/gallery7.jpg": {
+    "originalBytes": 94082,
+    "variants": [
+      {
+        "src": "/optimized/gallery7-640-a58a0bf06b.webp",
+        "width": 640,
+        "bytes": 24298
+      },
+      {
+        "src": "/optimized/gallery7-1280-9e4962f75d.webp",
+        "width": 929,
+        "bytes": 37228
+      }
+    ]
+  },
+  "/gallery8.jpg": {
+    "originalBytes": 133959,
+    "variants": [
+      {
+        "src": "/optimized/gallery8-640-f1b385955d.webp",
+        "width": 640,
+        "bytes": 42878
+      },
+      {
+        "src": "/optimized/gallery8-1280-843c2a8d6a.webp",
+        "width": 864,
+        "bytes": 71722
+      }
+    ]
+  },
+  "/gallery9.jpg": {
+    "originalBytes": 107018,
+    "variants": [
+      {
+        "src": "/optimized/gallery9-640-c0a642c81a.webp",
+        "width": 640,
+        "bytes": 26458
+      },
+      {
+        "src": "/optimized/gallery9-1280-a7ce6a497a.webp",
+        "width": 1280,
+        "bytes": 61558
+      }
+    ]
+  },
+  "/Kandy.jpg": {
+    "originalBytes": 6029376,
+    "variants": [
+      {
+        "src": "/optimized/Kandy-640-b265b8e3ca.webp",
+        "width": 640,
+        "bytes": 74410
+      },
+      {
+        "src": "/optimized/Kandy-1280-c5f842d8a5.webp",
+        "width": 1280,
+        "bytes": 268126
+      }
+    ]
+  },
+  "/mirissa.jpg": {
+    "originalBytes": 240070,
+    "variants": [
+      {
+        "src": "/optimized/mirissa-640-e347b3d0e1.webp",
+        "width": 640,
+        "bytes": 84480
+      },
+      {
+        "src": "/optimized/mirissa-1280-2fae95508b.webp",
+        "width": 1000,
+        "bytes": 188498
+      }
+    ]
+  },
+  "/new_logo.jpg": {
+    "originalBytes": 150192,
+    "variants": [
+      {
+        "src": "/optimized/new_logo-128-27af77dfac.webp",
+        "width": 128,
+        "bytes": 3694
+      }
+    ]
+  },
+  "/perahara.jpg": {
+    "originalBytes": 824493,
+    "variants": [
+      {
+        "src": "/optimized/perahara-640-e85861b658.webp",
+        "width": 640,
+        "bytes": 38196
+      },
+      {
+        "src": "/optimized/perahara-1280-cdd70ebad7.webp",
+        "width": 1280,
+        "bytes": 118398
+      }
+    ]
+  },
+  "/Sigiriya.jpg": {
+    "originalBytes": 654288,
+    "variants": [
+      {
+        "src": "/optimized/Sigiriya-640-55cc9f803a.webp",
+        "width": 640,
+        "bytes": 23564
+      },
+      {
+        "src": "/optimized/Sigiriya-1280-91f4301802.webp",
+        "width": 1280,
+        "bytes": 77050
+      }
+    ]
+  },
+  "/stanislav-rozhkov-WTFiv8DOsyQ-unsplash1.svg": {
+    "originalBytes": 35467004,
+    "variants": [
+      {
+        "src": "/optimized/stanislav-rozhkov-WTFiv8DOsyQ-unsplash1-640-eff5947c0e.webp",
+        "width": 640,
+        "bytes": 33224
+      },
+      {
+        "src": "/optimized/stanislav-rozhkov-WTFiv8DOsyQ-unsplash1-1280-fed12daf59.webp",
+        "width": 1280,
+        "bytes": 203272
+      },
+      {
+        "src": "/optimized/stanislav-rozhkov-WTFiv8DOsyQ-unsplash1-1920-5a76fb1382.webp",
+        "width": 1920,
+        "bytes": 658676
+      }
+    ]
+  },
+  "/stefano-alemani-f9KQYJR7fXk-unsplash1.svg": {
+    "originalBytes": 20010013,
+    "variants": [
+      {
+        "src": "/optimized/stefano-alemani-f9KQYJR7fXk-unsplash1-640-ac904eb73f.webp",
+        "width": 640,
+        "bytes": 81284
+      },
+      {
+        "src": "/optimized/stefano-alemani-f9KQYJR7fXk-unsplash1-1280-28cdb1ff85.webp",
+        "width": 1280,
+        "bytes": 294476
+      },
+      {
+        "src": "/optimized/stefano-alemani-f9KQYJR7fXk-unsplash1-1920-59261460a1.webp",
+        "width": 1920,
+        "bytes": 581480
+      }
+    ]
+  },
+  "/tain.jpg": {
+    "originalBytes": 174407,
+    "variants": [
+      {
+        "src": "/optimized/tain-640-7bb5f30289.webp",
+        "width": 640,
+        "bytes": 14694
+      },
+      {
+        "src": "/optimized/tain-1280-d54310b6c3.webp",
+        "width": 1280,
+        "bytes": 32282
+      }
+    ]
+  },
+  "/welcometolanka.JPG": {
+    "originalBytes": 75146,
+    "variants": [
+      {
+        "src": "/optimized/welcometolanka-640-2f69961a8a.webp",
+        "width": 640,
+        "bytes": 10726
+      },
+      {
+        "src": "/optimized/welcometolanka-1280-df25b8ac25.webp",
+        "width": 1280,
+        "bytes": 24348
+      }
+    ]
+  },
+  "/yala.jpg": {
+    "originalBytes": 1778735,
+    "variants": [
+      {
+        "src": "/optimized/yala-640-af909c3f20.webp",
+        "width": 640,
+        "bytes": 63256
+      },
+      {
+        "src": "/optimized/yala-1280-62eb2dbd51.webp",
+        "width": 1280,
+        "bytes": 226328
+      }
+    ]
+  }
+}

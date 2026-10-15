@@ -15,7 +15,7 @@ export const blogs: Blog[] = [
     id: 'jungle-wildlife-safari',
     title: 'Exploring the Wildlife of Yala National Park',
     category: 'jungle',
-    image: '/yala.jpg',
+    image: '/optimized/yala-1280-62eb2dbd51.webp',
     excerpt: 'Discover the rich biodiversity and magnificent wildlife of Sri Lanka\'s most famous national park.',
     content: `
       <p>Yala National Park, located in the southeastern region of Sri Lanka, is the country's most visited and second largest national park. Spanning over 979 square kilometers, Yala is divided into five blocks, with only two open to the public.</p>
@@ -36,7 +36,7 @@ export const blogs: Blog[] = [
     id: 'temple-anuradhapura',
     title: 'The Sacred City of Anuradhapura: A Journey Through Time',
     category: 'temple',
-    image: '/gallery3.jpg',
+    image: '/optimized/gallery3-1280-8eb59a2a1c.webp',
     excerpt: 'Explore the ancient ruins and sacred temples of Sri Lanka\'s first capital city.',
     content: `
       <p>Anuradhapura, founded around 5th century BCE, served as Sri Lanka's first capital and one of the greatest monastic cities of the ancient world. Today, this UNESCO World Heritage site stands as a testament to the island's rich cultural and religious heritage.</p>
@@ -57,7 +57,7 @@ export const blogs: Blog[] = [
     id: 'waterfall-dunhinda',
     title: 'The Breathtaking Beauty of Dunhinda Falls',
     category: 'waterfall',
-    image: '/gallery10.jpg',
+    image: '/optimized/gallery10-1280-03128abe00.webp',
     excerpt: 'Discover one of Sri Lanka\'s most spectacular waterfalls hidden in the lush highlands.',
     content: `
       <p>Nestled in the verdant hills near Badulla town in Sri Lanka's Uva Province, Dunhinda Falls stands as one of the island's most spectacular natural wonders. Plunging from a height of approximately 63 meters (210 feet), the waterfall creates a mesmerizing mist that gave rise to its local name "Bridal Falls."</p>
@@ -78,7 +78,7 @@ export const blogs: Blog[] = [
     id: 'jungle-sinharaja',
     title: 'Sinharaja Forest Reserve: The Last Pristine Rainforest',
     category: 'jungle',
-    image: '/gallery8.jpg',
+    image: '/optimized/gallery8-1280-843c2a8d6a.webp',
     excerpt: 'Journey into Sri Lanka\'s biodiversity hotspot and UNESCO World Heritage Site.',
     content: `
       <p>Sinharaja Forest Reserve, a UNESCO World Heritage Site and Biosphere Reserve, represents the last viable area of primary tropical rainforest in Sri Lanka. Spanning approximately 11,187 hectares, this lowland rainforest is a treasure trove of endemic species.</p>
@@ -99,7 +99,7 @@ export const blogs: Blog[] = [
     id: 'temple-temple-of-tooth',
     title: 'Sri Dalada Maligawa: The Temple of the Sacred Tooth Relic',
     category: 'temple',
-    image: '/gallery18.jpg',
+    image: '/optimized/gallery18-1280-5264af5eee.webp',
     excerpt: 'Discover the cultural and spiritual significance of Kandy\'s most revered temple.',
     content: `
       <p>The Temple of the Sacred Tooth Relic (Sri Dalada Maligawa) in Kandy is not just a religious monument but a symbol of Sri Lankan heritage and sovereignty. Housing Buddha's tooth relic, it has been a pilgrimage site for Buddhists worldwide for over 400 years.</p>
@@ -120,7 +120,7 @@ export const blogs: Blog[] = [
     id: 'waterfall-bakers-falls',
     title: 'The Hidden Charm of Baker\'s Falls in Horton Plains',
     category: 'waterfall',
-    image: '/gallery13.jpg',
+    image: '/optimized/gallery13-1280-abb31971b3.webp',
     excerpt: 'Experience the misty beauty of this waterfall nestled in Sri Lanka\'s central highlands.',
     content: `
       <p>Located within the misty landscapes of Horton Plains National Park, Baker's Falls presents a serene contrast to the rugged plains surrounding it. Named after Sir Samuel Baker, a British explorer who pioneered the agricultural development of the region, this waterfall cascades approximately 20 meters through lush montane forest.</p>

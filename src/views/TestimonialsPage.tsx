@@ -137,7 +137,7 @@ const TestimonialsPage: React.FC = () => {
         className="relative h-64 md:h-80 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(/welcometolanka.JPG)",
+            "url(/optimized/welcometolanka-1280-df25b8ac25.webp)",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
